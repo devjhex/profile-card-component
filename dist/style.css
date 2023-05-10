@@ -1,0 +1,108 @@
+/* COLORS */
+/* Primary */
+/* Neutral */
+/* Fonts */
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p {
+  font-family: "Kumbh Sans", sans-serif;
+  margin-top: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
+  background-position: top -250px left -300px, bottom -180px right -300px;
+  background-size: 500px, 500px;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 340px;
+  height: 380px;
+  background-color: white;
+  border-radius: 1rem;
+}
+.card .card__image {
+  height: 140px;
+  position: relative;
+  background-image: url("/images/bg-pattern-card.svg");
+  margin-bottom: 4.5rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.card .card__image .image {
+  position: absolute;
+  left: 120px;
+  top: 88px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.card .card__name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  color: hsl(229, 23%, 23%);
+}
+.card .card__name .age {
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+.card .location {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 1.5rem;
+}
+.card .line {
+  width: 100%;
+  height: 1px;
+  background-color: hsla(0, 0%, 59%, 0.29);
+  margin-bottom: 1.6rem;
+}
+.card .card__stats {
+  font-family: "Kumbh Sans", sans-serif;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+.card .card__stats li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .card__stats li .big {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: hsl(229, 23%, 23%);
+}
+.card .card__stats span:last-child {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 2px;
+}
+
+@media (min-width: 700px) {
+  body {
+    background-size: contain, contain;
+    background-position: top -430px left -10px, bottom -430px right -10px;
+  }
+  .card {
+    max-width: 360px;
+  }
+}/*# sourceMappingURL=style.css.map */
